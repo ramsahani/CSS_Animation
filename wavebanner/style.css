@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Arial,sans-serif;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 100px;
+ 
+ background:linear-gradient(180deg,#0081ff,#ff137d), url('img/bg.png');
+    background-blend-mode: screen;
+
+}
+
+section .content{
+    max-width: 700px;
+}
+
+section .content h2{
+    font-size:3em;
+    color:white;    
+
+}
+section .content p{
+    font-size: 1.2em;
+    color: white;
+}
+section img{
+    position: relative;
+    max-width: 350px;
+    z-index: 1;
+    border-radius:250px;
+}
+
+section img:hover{
+    filter:sepia(100%);
+}
+section .wave{
+    position:absolute;
+    bottom:0;
+    left:0;
+}

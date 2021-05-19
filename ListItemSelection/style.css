@@ -1,0 +1,100 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    font-family:'Dancing Script',cursive,sans-serif;
+}
+body{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+    background:linear-gradient(to right,#4082ed,#f0f2f5,#4082ed);
+  
+    
+}
+.container{
+    background-color: white;
+    position: relative;
+   width: 20%;
+    border: 1px solid rgb(0, 0, 0,0.5);
+}
+.container ul li{
+    list-style: none;
+}
+.container h2{
+    padding: 10px 20px;
+    background-color: deeppink;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.container:hover{
+    box-shadow: 5px 5px 40px 4px dimgray;
+}
+.container ul li label input[type=checkbox]{
+    opacity: 0;
+    visibility: hidden;
+    appearance: none;
+} 
+.container ul li {
+    margin: 0px 10px;
+    padding: 10px 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    background-color: white;
+}
+.container ul li:last-child{
+    border-bottom: none;
+}
+.container ul li label{
+    
+    position : relative;
+    display: flex;
+    justify-content:space-between;
+    cursor: pointer;
+    align-items: center;
+}
+.container ul  li label p{
+    position:absolute;
+    font-size: 20px;
+    letter-spacing: 2px;
+
+}
+
+.container ul li label span{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container ul li label span::before{
+    content:' ';
+    position: absolute;
+    top:8px;
+    left:5px;
+    height: 7px;
+    width: 14px;
+    border-left: 2px solid #ccc;
+    border-bottom:  2px solid #ccc;
+    transform: rotate(-50deg);
+}
+.container ul li label input:checked ~ p{
+    text-decoration: line-through;
+    color:rgb(255, 115, 0);
+    font-weight: 300;
+}
+.container ul li label input:checked ~span{
+    background-color: rgb(0, 204, 255);
+}
+.container ul li label input:checked ~span::before{
+    border-left:2px solid white;
+    border-bottom:2px solid white;
+}
